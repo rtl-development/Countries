@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    android:padding="@dimen/fragment_country_info_root_padding"
+    tools:context=".ui.countries.fragments.CountryInfoFragment">
+
+    <ProgressBar
+        android:id="@+id/pb_country_info"
+        android:layout_width="@dimen/pb_dimen"
+        android:layout_height="@dimen/pb_dimen"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_country_info"
+        android:layout_width="@dimen/fragment_country_info_img_width"
+        android:layout_height="@dimen/fragment_country_info_img_height"
+        android:layout_marginEnd="@dimen/recycler_item_img_margin_end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/iv_country_flag"
+        android:src="@drawable/img_holder"
+        app:strokeColor="@color/purple_700"
+        app:strokeWidth="@dimen/recycler_item_img_stroke_width" />
+
+    <TextView
+        android:id="@+id/tv_country_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/fragment_country_info_tv_margin_top"
+        android:maxLines="@integer/fragment_country_info_tv_max_line"
+        app:layout_constraintTop_toBottomOf="@id/iv_country_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="@dimen/fragment_country_info_tv_size"
+        tools:text="Text"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

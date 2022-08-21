@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recycler_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/recycler_item_container_padding"
+    android:paddingTop="@dimen/recycler_item_container_padding"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_country"
+        android:layout_width="@dimen/recycler_item_img_width"
+        android:layout_height="@dimen/recycler_item_img_height"
+        android:layout_marginEnd="@dimen/recycler_item_img_margin_end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/iv_country_flag"
+        android:src="@drawable/img_holder"
+        app:strokeColor="@color/purple_700"
+        app:strokeWidth="@dimen/recycler_item_img_stroke_width" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/iv_country"
+        app:layout_constraintTop_toTopOf="@id/iv_country"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLines="@integer/recycler_item_name_max_lines"
+        tools:text="Title"
+        android:textSize="@dimen/recycler_item_name_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/recycler_item_brief_size"
+        android:maxLines="@integer/recycler_item_brief_max_lines"
+        tools:text="Description" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_country"
+        android:layout_marginTop="@dimen/recycler_item_divider_top_margin"
+        app:dividerInsetStart="@dimen/recycler_item_divider_inset_end_start"
+        app:dividerInsetEnd="@dimen/recycler_item_divider_inset_end_start"/>
+    <!--
+        </com.google.android.material.card.MaterialCardView>
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

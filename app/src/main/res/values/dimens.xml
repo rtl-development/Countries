@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- recycler_item_country -->
+    <dimen name="recycler_item_img_width">100dp</dimen>
+    <dimen name="recycler_item_img_height">60dp</dimen>
+    <dimen name="recycler_item_img_margin_end">16dp</dimen>
+    <dimen name="recycler_item_img_end_margin">16dp</dimen>
+
+    <dimen name="recycler_item_name_margin_end">16dp</dimen>
+    <dimen name="recycler_item_name_size">18sp</dimen>
+    <integer name="recycler_item_name_max_lines">1</integer>
+
+    <dimen name="recycler_item_brief_size">16sp</dimen>
+    <integer name="recycler_item_brief_max_lines">2</integer>
+
+    <dimen name="recycler_item_container_padding">16dp</dimen>
+
+    <dimen name="recycler_item_cardview_corner_radius">20dp</dimen>
+
+    <dimen name="recycler_item_divider_inset_end_start">16dp</dimen>
+    <dimen name="recycler_item_divider_top_margin">16dp</dimen>
+
+    <!-- fragment_country_info -->
+    <dimen name="fragment_country_info_img_width">200dp</dimen>
+    <dimen name="fragment_country_info_img_height">198dp</dimen>
+
+    <dimen name="fragment_country_info_tv_margin_top">16dp</dimen>
+
+    <dimen name="fragment_country_info_root_padding">30dp</dimen>
+    <dimen name="fragment_country_info_root_margin">40dp</dimen>
+
+    <dimen name="fragment_country_info_tv_size">16sp</dimen>
+
+    <integer name="fragment_country_info_tv_max_line">20</integer>
+
+    <!-- shabeable image -->
+    <dimen name="recycler_item_img_corner_size">18dp</dimen>
+    <dimen name="recycler_item_img_stroke_width">4dp</dimen>
+
+    <!-- progress bar -->
+    <dimen name="pb_dimen">150dp</dimen>
+
+
+
+</resources>
