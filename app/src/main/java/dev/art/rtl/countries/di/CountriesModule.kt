@@ -6,9 +6,11 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import dev.art.rtl.countries.data.model.Country
 import dev.art.rtl.countries.data.remote.ApiInterface
 import dev.art.rtl.countries.data.repository.CountriesRepository
 import dev.art.rtl.countries.utils.Constants
+import dev.art.rtl.countries.utils.Resource
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton

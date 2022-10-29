@@ -43,6 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="@dimen/recycler_item_brief_size"
         android:maxLines="@integer/recycler_item_brief_max_lines"
+        android:text="@string/recycler_item_desc_text"
         tools:text="Description" />
 
     <com.google.android.material.divider.MaterialDivider

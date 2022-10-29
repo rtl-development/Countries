@@ -20,8 +20,11 @@ class CountriesRepository @Inject constructor
     private val apiInterface: ApiInterface,
     @ApplicationContext val context: Context
 ) {
+    //private val _allCountries = MutableSharedFlow<Resource<List<Country>>>()
+    //private val _countryInfo = MutableSharedFlow<Resource<List<Country>>>()
 
-    suspend fun getCountries(): Flow<Resource<List<Country>>> = flow {
+    //region allCountries
+    suspend fun getAllCountries(): Flow<Resource<List<Country>>> = flow {
 
         emit(Resource.loading())
 
@@ -35,7 +38,10 @@ class CountriesRepository @Inject constructor
         }
     }
 
-    suspend fun getOneCountry(name: String = "saudi"): Flow<Resource<List<Country>>> = flow {
+    //endregion
+
+    //region CountryInfo
+    suspend fun getCountryInfo(name: String): Flow<Resource<List<Country>>> = flow {
 
         emit(Resource.loading())
 
@@ -48,4 +54,7 @@ class CountriesRepository @Inject constructor
             emit(Resource.error(context.getString(R.string.error_api_msg)))
         }
     }
+
+    //endregion
+
 }
